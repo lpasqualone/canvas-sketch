@@ -41,7 +41,7 @@ const sketch = () => {
       x = cx + radius * Math.sin(angle);
       y = cy + radius * Math.cos(angle);
 
-
+      // spokes
       context.save();
       context.translate(x,y);
       context.rotate(-angle);
@@ -52,7 +52,7 @@ const sketch = () => {
       context.fill();
       context.restore();
 
-
+      // light blue spirals, inner
       context.save();
       context.translate(cx, cy);
       context.rotate(-angle);
@@ -66,6 +66,7 @@ const sketch = () => {
 
       context.restore();
 
+      // dark blue spirals, outer
       context.save();
       context.translate(cx, cy);
       context.rotate(-angle);
