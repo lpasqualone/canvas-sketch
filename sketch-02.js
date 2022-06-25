@@ -5,6 +5,10 @@ const random = require('canvas-sketch-util/random');
 
 const settings = {
   dimensions: [ 1080, 1080 ],
+  animate: true,
+  duration: 8,
+  fps: 1.2,
+  playbackRate: 'throttle'
 };
 
 const degToRad = (degrees) => {
@@ -42,15 +46,15 @@ const sketch = () => {
       y = cy + radius * Math.cos(angle);
 
       // spokes
-      context.save();
-      context.translate(x,y);
-      context.rotate(-angle);
-      context.scale(random.range(0.8, 2), random.range(0.3, 0.9));;
+      // context.save();
+      // context.translate(x,y);
+      // context.rotate(-angle);
+      // context.scale(random.range(0.8, 2), random.range(0.3, 0.9));;
 
-      context.beginPath();
-      context.rect(-w * 0.6, random.range(0, -h * 0.5), w, h);
-      context.fill();
-      context.restore();
+      // context.beginPath();
+      // context.rect(-w * 0.6, random.range(0, -h * 0.5), w, h);
+      // context.fill();
+      // context.restore();
 
       // light blue spirals, inner
       context.save();
