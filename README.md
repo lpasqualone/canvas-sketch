@@ -4,7 +4,7 @@
 <img align="right" src="https://github.com/lpasqualone/canvas-sketch/blob/main/output-gifs/blue-arcs.gif" width="300"/>
 
 ### **GOALS / OBJECTIVES**
-Practice Javascript methods and algoriths<br>
+Practice Javascript methods and algorithms<br>
 loops
 * const and let
 * functions
